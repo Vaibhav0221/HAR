@@ -47,5 +47,3 @@ def home():
             return render_template("index.html", result="No image uploaded")
     return render_template("index.html")
 
-if __name__ == '__main__':
-    app.run(port=8080)
