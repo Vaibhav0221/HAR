@@ -1,6 +1,5 @@
-python_version >=3.8,<3.11
-flask
-gunicorn
-numpy
-PIL
-keras
+Flask==2.0.1
+gunicorn==20.1.0
+numpy==1.21.2
+Pillow==9.0.1
+keras==2.8.0
