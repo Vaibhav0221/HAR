@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the <span id="name">Human Action Recognition</span></h1>
+        <h2>Web Application</h2>
+        <div class="center">
+            <a href="https://github.com/Vaibhav0221/HAR" target="_blank" class="button">GitHub Repository</a>
+        </div>
+        <h1>Upload an image to classify</h1>
+        <form action="/" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="image" accept="image/*" class="file-input">
+            <input type="submit" value="Classify" class="submit-button">
+        </form>
+        {% if result %}
+        <h2>Prediction: <span id="prediction-result">{{ result }}</span></h2>
+        {% endif %}
+    </div>
+    <div>
+        <p>Note:</p>
+        <ul>
+            <li>This Model is approximately 70% accurate</li>
+            <li>Dataset has been used from Kaggle. <a href="https://www.kaggle.com/datasets/meetnagadia/human-action-recognition-har-dataset">Learn more</a>.</li></ul>
+
+    <footer>
+        <p>Vaibhav Soni | &copy; 2024 | All rights reserved.</p>
+    </footer>
+</body>
+</html>
