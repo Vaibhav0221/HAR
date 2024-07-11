@@ -5,7 +5,7 @@ from keras.models import load_model
 import os
 
 app = Flask(__name__)
-path_to_model = 'static/Models/Model2.h5'
+path_to_model = 'Model2.h5'
 
 
 V_model = load_model(path_to_model)
