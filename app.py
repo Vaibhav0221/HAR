@@ -2,9 +2,10 @@ from flask import Flask, render_template, request
 import numpy as np
 from PIL import Image
 from keras.models import load_model
+import os
 
 app = Flask(__name__)
-path_to_model = 'https://github.com/Vaibhav0221/HAR/tree/4be700896bee452dba900d7e6aaa6addd23c984a/static/Models/Model2.h5'
+path_to_model = os.path.join(app.root_path, 'static', 'Models', 'Model2.h5')
 
 
 V_model = load_model(path_to_model)
