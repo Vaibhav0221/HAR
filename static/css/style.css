@@ -1,0 +1,98 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    }
+    
+    /* Container */
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+    /* Headings */
+    h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    }
+    
+    h2 {
+    font-size: 1.5em;
+    margin-top: 24px;
+    }
+    
+    /* Centered Element */
+    .center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+    footer {
+        text-align: center; /* Center the copyright text */
+        padding: 10px; /* Add some padding */
+        font-size: 0.8em; /* Adjust font size slightly smaller */
+        color: rgb(41, 39, 39); /* Set a light gray color for the text */
+      }
+    /* Button */
+    .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out; /* Optional: Button hover effect */
+    }
+    
+    .button:hover {
+    background-color: #3e8e41; /* Optional: Change background color on hover */
+    }
+    
+    /* Upload Form */
+    .upload-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    }
+    
+    .file-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    }
+    
+    .submit-button {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out; /* Optional: Button hover effect */
+    }
+    
+    .submit-button:hover {
+    background-color: #2980b9; /* Optional: Change background color on hover */
+    }
+    h2 #prediction-result {
+        color: green;
+    }
+    h1 #name {
+    color: teal; /* Replace with your desired color name */
+    }
+    
+    ul {
+        list-style: disc; /* Set the list style to disc (bullets) */
+        padding-left: 20px; /* Adjust indent for list items */
+        margin-top: 0; /* Remove top margin for closer spacing */
+      }
+    
