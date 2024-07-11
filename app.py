@@ -11,7 +11,7 @@ path_to_model = 'Model2.h5'
 V_model = load_model(path_to_model)
 
 def read_image(fn):
-    image = Image.open(fn)
+    image = Image.open(fn).convert('RGB')
     return np.asarray(image.resize((224, 224)))
 
 def test_predict(test_image):
